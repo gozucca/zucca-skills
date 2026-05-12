@@ -7,8 +7,11 @@ A Claude Code marketplace of skills for Zucca's engineering and fleet operations
 | Skill | When to use |
 |---|---|
 | [`merge-batch`](skills/merge-batch/SKILL.md) | Merge a batch of related PRs (coverage-keeper, feature-spec-keeper, etc.) that all touch the same append-only log files. Auto-handles the merge → rebase → merge cascade with safety guards. |
+| [`spec-walkthrough`](skills/spec-walkthrough/SKILL.md) | Walk the `## Open questions for the rewrite` section across a batch of spec PRs. Applies the team's status-quo-for-features-fix-bad-architecture policy as defaults; user overrides per-question; patches the spec doc + pushes. |
+| [`neon-prune`](skills/neon-prune/SKILL.md) | Clean up stale preview / CI branches in a Neon project when CI is hitting create-branch rate limits or a periodic cleanup is overdue. Conservative defaults: only `preview/*` and `ci/*` branches older than 14 days that have no children. |
+| [`rerun-flaky-checks`](skills/rerun-flaky-checks/SKILL.md) | Rerun the latest failure of each watched check (default: `db-*`, `promptfoo-eval`, `e2e`) across a batch of PRs. Skips checks that have failed 3+ times — those aren't flaky, they're broken. |
 
-More skills coming. Candidate roadmap: `spec-walkthrough`, `neon-prune`, `rerun-flaky-checks`, `review-pr-batch`.
+More candidates: `review-pr-batch`, `bump-versions`, `release-coordination`.
 
 ## Install (one-time, per teammate)
 
