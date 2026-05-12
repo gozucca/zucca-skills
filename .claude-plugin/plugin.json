@@ -1,0 +1,20 @@
+{
+  "name": "zucca-skills",
+  "description": "Skills for Zucca's engineering and fleet operations",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zucca Engineering",
+    "email": "engineering@zucca.ai"
+  },
+  "homepage": "https://github.com/gozucca/zucca-skills",
+  "repository": "https://github.com/gozucca/zucca-skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "skills",
+    "zucca",
+    "github",
+    "merge",
+    "agent-fleet",
+    "operations"
+  ]
+}
